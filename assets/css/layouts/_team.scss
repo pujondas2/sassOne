@@ -1,0 +1,43 @@
+/* team area start */
+
+.team-area {
+  .single-team {
+    position: relative;
+    overflow: hidden;
+    .team-img {
+      img {
+        width: 100%;
+      }
+    }
+    .team-content {
+      position: absolute;
+      bottom: -121px;
+      left: 0;
+      width: 100%;
+      background: $bg_dark;
+      color: $white;
+      padding: 20px 0;
+      text-align: center;
+      transition: all 0.4s ease;
+      span {
+        display: block;
+        margin: 5px 0 10px;
+        text-transform: capitalize;
+        font-style: italic;
+      }
+      .social {
+        a {
+          color: $white;
+          margin: 0 5px;
+        }
+      }
+    }
+    &:hover {
+      .team-content {
+        bottom: 0;
+      }
+    }
+  }
+}
+
+/* team area end */

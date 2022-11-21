@@ -1,0 +1,27 @@
+/* banner area start */
+.banner-area {
+  height: 100vh;
+  z-index: 2;
+  .banner-content {
+    h1 {
+      font-size: 68px;
+      font-weight: 700;
+      text-transform: capitalize;
+      line-height: 1.2;
+      color: $white;
+    }
+    ul {
+      li {
+        margin: 0 2px;
+        color: $white;
+        text-transform: capitalize;
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+    a {
+      margin: 0 5px;
+    }
+  }
+}
+/* banner area end */

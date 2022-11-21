@@ -1,0 +1,29 @@
+/* about area start */
+
+.about-area {
+  .about-content {
+    h2 {
+      font-size: 48px;
+      line-height: 60px;
+      text-transform: capitalize;
+      font-weight: 700;
+      color: $primary_color;
+    }
+    h4 {
+      font-size: 18px;
+      text-transform: capitalize;
+    }
+    .skill {
+      ul {
+        li {
+          margin-bottom: 10px;
+          i {
+            color: $primary_color;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+/* about area end */

@@ -1,0 +1,25 @@
+/* testimonial area start */
+.testimonial-area {
+  background: $bg_dark;
+  color: $white;
+  p {
+    color: $white;
+  }
+  .single-testimonial {
+    .testimonial-img {
+      img {
+        border-radius: 50%;
+      }
+    }
+    .testimonial-content {
+      h3 {
+        margin: 15px 0 5px;
+      }
+      span {
+        text-transform: capitalize;
+        font-style: italic;
+      }
+    }
+  }
+}
+/* testimonial area end */

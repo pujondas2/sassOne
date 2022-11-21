@@ -1,0 +1,37 @@
+/* service area start */
+.service-area {
+  background: $bg_light;
+  .single-service {
+    background: $white;
+    padding: 30px 15px;
+    border: 1px solid $border_color;
+    border-radius: 5px;
+    text-align: center;
+    .service-icon {
+      i {
+        background: $primary_color;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 25px;
+        color: $white;
+        transition: 0.4s all ease;
+      }
+    }
+    h4 {
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      text-transform: capitalize;
+    }
+    p {
+      font-size: 14px;
+    }
+    &:hover {
+      i {
+        border-radius: 50%;
+      }
+    }
+  }
+}
+/* service area end */

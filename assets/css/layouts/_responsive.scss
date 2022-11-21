@@ -1,0 +1,126 @@
+/* responsive query */
+@media (max-width: $grid-md-breakpoint) {
+  .banner-area {
+    .banner-content {
+      h1 {
+        font-size: 54px;
+      }
+    }
+  }
+}
+
+/* for mobile menu */
+@media (max-width: $grid-lg-breakpoint) {
+  .header-area {
+    padding-left: 30px;
+    padding-right: 30px;
+    &.sticky {
+      padding-right: 30px;
+      padding-left: 30px;
+      .main-menu {
+        ul {
+          li {
+            a {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+    .main-menu {
+      display: block;
+      background: $bg_dark;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      bottom: 0;
+      width: 300px;
+      height: 100%;
+      z-index: 99;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.4s ease;
+      &.active {
+        right: 0;
+        opacity: 1;
+        visibility: visible;
+      }
+      .close-nav {
+        width: 30px;
+        height: 30px;
+        border: 1px solid $white;
+        margin: 30px;
+        cursor: pointer;
+        span {
+          width: 20px;
+          height: 2px;
+          background: $white;
+          display: block;
+          transform: rotate(45deg);
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background: $white;
+            display: block;
+            transform: rotate(-90deg);
+          }
+        }
+      }
+      ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        li {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .mobile-menu {
+      display: flex;
+    }
+  }
+}
+
+@media (max-width: $grid-sm-breakpoint) {
+  .main-menu {
+    width: 100%;
+  }
+  .banner-area {
+    .banner-content {
+      h1 {
+        font-size: 42px;
+      }
+      ul {
+        li {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .timeline-area {
+    .timeline-list {
+      &::before {
+        display: none;
+      }
+      li {
+        &:nth-child(even) {
+          .timeline-content {
+            float: none;
+            text-align: center;
+          }
+        }
+        &::after {
+          display: none;
+        }
+        .timeline-content {
+          width: 100%;
+          text-align: center;
+          margin: 15px 0;
+        }
+      }
+    }
+  }
+}

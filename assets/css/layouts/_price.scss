@@ -1,0 +1,34 @@
+/* price area start */
+
+.price-area {
+  background: $bg_light;
+  .single-price {
+    background: $white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 5px;
+    &.price-active {
+      border: 5px solid $primary_color;
+    }
+    span {
+      font-size: 22px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+      display: block;
+    }
+    h1 {
+      font-size: 48px;
+      line-height: 1.2;
+      font-weight: 800;
+    }
+    ul {
+      margin: 20px 0;
+      li {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+/* price area end */

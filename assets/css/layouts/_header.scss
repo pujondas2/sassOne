@@ -1,0 +1,110 @@
+/* header area start */
+.header-area {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  &.sticky {
+    background-color: #fff;
+    box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.05);
+    transition: 0.3s all linear;
+    padding: 10px 0;
+    .logo {
+      a {
+        color: $linked_color;
+        border: 1px solid $linked_color;
+      }
+    }
+    .main-menu {
+      ul {
+        li {
+          &.current {
+            a {
+              color: $primary_color;
+            }
+          }
+          a {
+            color: $linked_color;
+            &:hover {
+              color: $primary_color;
+            }
+          }
+        }
+      }
+    }
+    .mobile-menu {
+      border: 1px solid $linked_color;
+      span,
+      ::before,
+      ::after {
+        background: $bg_dark;
+      }
+    }
+  }
+  .logo {
+    a {
+      color: $white;
+      font-size: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+      border: 1px solid $white;
+      display: inline-block;
+      padding: 10px 20px;
+      letter-spacing: 2px;
+    }
+  }
+
+  .main-menu {
+    ul {
+      li {
+        &.current {
+          a {
+            color: $primary_color;
+          }
+        }
+        a {
+          display: block;
+          color: $white;
+          font-weight: 600;
+          text-transform: uppercase;
+          margin-left: 20px;
+          transition: all 0.3s ease;
+          &:hover {
+            color: $primary_color;
+          }
+        }
+      }
+    }
+  }
+  .mobile-menu {
+    width: 30px;
+    height: 30px;
+    border: 1px solid $white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    span {
+      width: 20px;
+      height: 2px;
+      background: $white;
+      display: block;
+      position: relative;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: $white;
+      }
+      &::before {
+        top: -5px;
+      }
+      &::after {
+        top: 5px;
+      }
+    }
+  }
+}
+/* header area end */
