@@ -25,6 +25,13 @@
   // one page nav for scrolling
   $("#nav").onePageNav();
 
+  // banner ripple
+  $(".banner-area").ripples({
+    resolution: 512,
+    dropRadius: 20,
+    perturbance: 0.04,
+  });
+
   // project gallery
   $(".popup-image").magnificPopup({
     type: "image",
